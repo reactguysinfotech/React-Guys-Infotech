@@ -10,6 +10,11 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import "../slider.css";
 
+import Avatar1 from "../assets/150.jpg";
+import Avatar2 from "../assets/Avatar2.jpg";
+import Avatar3 from "../assets/Avatar3.jpg";
+import Avatar4 from "../assets/Avatar4.jpg";
+
 const Testimonials = () => {
   const { scrollY } = useScroll();
   const y1 = useTransform(scrollY, [0, 4500], [1000, 0], { clamp: false });
@@ -28,9 +33,9 @@ const Testimonials = () => {
           <div className="flex text-center justify-center gap-2 md:gap-0 md:flex-col text-[40px] md:text-[90px] 2xl:text-[120px] leading-[40px] md:leading-[95px] 2xl:leading-[123px] font-oswald uppercase mb-2 text-[#111111]">
             Client Says
           </div>
-          <div className="text-[16px] 2xl:text-[20px] leading-[24px] 2xl:leading-[32px] text-black text-center">
+          {/* <div className="text-[16px] 2xl:text-[20px] leading-[24px] 2xl:leading-[32px] text-black text-center">
             What Client Say
-          </div>
+          </div> */}
         </Div>
         {/* SECTION HEADING END */}
 
@@ -41,12 +46,12 @@ const Testimonials = () => {
             <div className="text-black flex items-center flex-col px-[25px] md:px-[50px] py-[50px]">
               <div className="mb-[25px]">
                 <img
-                  src="https://i.pravatar.cc/300"
+                  src={Avatar1}
                   className="w-[80px] h-[80px] max-w-[80px] rounded-full"
                 />
-                <div className="font-bold">Daria Islam</div>
+                <div className="font-bold">Edwin Juarez</div>
                 <div className="text-[16px] 2xl:text-[20px] leading-[24px] 2xl:leading-[32px] text-black text-center">
-                  Daria Islam
+                  Human resources administrative assistant
                 </div>
               </div>
               <div className="text-[16px] 2xl:text-[20px] leading-[24px] 2xl:leading-[32px] text-black text-center">
@@ -60,21 +65,18 @@ const Testimonials = () => {
             <div className="text-black flex items-center flex-col px-[25px] md:px-[50px] py-[50px]">
               <div className="mb-[25px]">
                 <img
-                  src="https://i.pravatar.cc/300"
+                  src={Avatar2}
                   className="w-[80px] h-[80px] max-w-[80px] rounded-full"
                 />
-                <div className="font-bold">John Doy</div>
+                <div className="font-bold">Robert J. Freeman</div>
                 <div className="text-[16px] 2xl:text-[20px] leading-[24px] 2xl:leading-[32px] text-black text-center">
-                  Hamim Touma
+                  Real Estate Company Owner
                 </div>
               </div>
               <div className="text-[16px] 2xl:text-[20px] leading-[24px] 2xl:leading-[32px] text-black text-center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur.
+                Job done on time and on budget. Fully Satisfied. They are
+                skilled, available, project oriented and solved all the
+                challenges coming out from the project. Recommended
               </div>
             </div>
             {/* SLIDE END */}
@@ -82,21 +84,37 @@ const Testimonials = () => {
             <div className="text-black flex items-center flex-col px-[25px] md:px-[50px] py-[50px]">
               <div className="mb-[25px]">
                 <img
-                  src="https://i.pravatar.cc/300"
+                  src={Avatar3}
                   className="w-[80px] h-[80px] max-w-[80px] rounded-full"
                 />
-                <div className="font-bold">John Doy</div>
+                <div className="font-bold">Teresa Caffey</div>
                 <div className="text-[16px] 2xl:text-[20px] leading-[24px] 2xl:leading-[32px] text-black text-center">
-                  Client
+                  Travel Agent
                 </div>
               </div>
               <div className="text-[16px] 2xl:text-[20px] leading-[24px] 2xl:leading-[32px] text-black text-center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur.
+                React Guys Infotech's team continue to provide exceptional
+                service in Front-End Development. We look forward to continue to
+                work with them.
+              </div>
+            </div>
+            {/* SLIDE END */}
+            {/* SLIDE START */}
+            <div className="text-black flex items-center flex-col px-[25px] md:px-[50px] py-[50px]">
+              <div className="mb-[25px]">
+                <img
+                  src={Avatar4}
+                  className="w-[80px] h-[80px] max-w-[80px] rounded-full"
+                />
+                <div className="font-bold">Nettie Scott</div>
+                <div className="text-[16px] 2xl:text-[20px] leading-[24px] 2xl:leading-[32px] text-black text-center">
+                  Orthopedic Doctor
+                </div>
+              </div>
+              <div className="text-[16px] 2xl:text-[20px] leading-[24px] 2xl:leading-[32px] text-black text-center">
+                Great work with REACT GUYS INFOTECH! Also when something did not
+                go as expected, the task still had prior and then solved.
+                Recommend!
               </div>
             </div>
             {/* SLIDE END */}
